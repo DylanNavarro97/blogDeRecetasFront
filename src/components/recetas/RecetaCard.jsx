@@ -18,7 +18,7 @@ function RecetaCard({ receta }) {
         </Card.Text>
       </Card.Body>
       <div className="text-end pe-2 pb-2">
-          <Link className="btn btn-primary" to={`/receta/${receta.id}`}>Ver receta</Link>
+          <Link className="btn btn-primary" to={`/receta/${receta._id}`}>Ver receta</Link>
         </div>
     </Card>
   );

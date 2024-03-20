@@ -16,7 +16,7 @@ const ItemReceta = ({ receta, setRecetas }) => {
       cancelButtonText: "Cancelar",
     }).then(async (result) => {
       if (result.isConfirmed) {
-        const respuesta = await borrarRecetaAPI(receta.id);
+        const respuesta = await borrarRecetaAPI(receta._id);
         if (respuesta.status === 200) {
           Swal.fire({
             title: "Receta eliminada",
@@ -39,7 +39,7 @@ const ItemReceta = ({ receta, setRecetas }) => {
 
   return (
     <tr>
-      <td className="text-center">{receta.id}</td>
+      <td className="text-center">{receta._id}</td>
       <td>{receta.nombre}</td>
       <td className="text-center">
         <img src={receta.imagen} alt={receta.nombre} className="img-admin" />
@@ -47,7 +47,7 @@ const ItemReceta = ({ receta, setRecetas }) => {
       <td className="text-center">{receta.categoria}</td>
       <td className="text-center">
         <Link
-          to={`/administrador/editar/${receta.id}`}
+          to={`/administrador/editar/${receta._id}`}
           variant="warning"
           className="me-lg-2 btn btn-warning"
         >

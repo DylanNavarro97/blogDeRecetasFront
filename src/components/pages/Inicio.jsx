@@ -27,7 +27,7 @@ function Inicio() {
         <h2 className="mb-3">Recetas disponibles</h2>
         <div className="row">
           {recetas?.map((receta) => (
-            <div className="col-md-4 col-lg-3 mb-3" key={receta.id}>
+            <div className="col-md-4 col-lg-3 mb-3" key={receta._id}>
               <RecetaCard receta={receta}/>
             </div>
           ))}
