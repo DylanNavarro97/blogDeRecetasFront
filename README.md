@@ -4,7 +4,7 @@ Web app single page que permite crear y almacenar recetas.
 
 ## Comenzando 🚀
 
-git clone https://github.com/DylanNavarro97/TpReact-Ej14.git
+git clone https://github.com/DylanNavarro97/blogDeRecetasFront
 
 ### Pre-requisitos 📋
 
